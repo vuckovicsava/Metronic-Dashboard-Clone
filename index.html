@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Metronic | Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="navbar__logo">
+      <img src="./images/logo.png" alt="logo">
+    </div>
+    <div class="navbar__nav">
+      <i class="fas fa-bars" id="hamburger-btn"></i>
+    </div>
+  </header>
+
+  <main class="main">
+    <aside class="sidebar">
+      <ul class="sidebar__nav">
+        <li class="sidebar__link">
+          <i class="fas fa-chart-line"></i>
+          Dashboard
+        </li>
+        <li class="sidebar__link">
+          <i class="fas fa-box-open"></i>
+          Layouts
+        </li>
+        <li class="sidebar__link">
+          <i class="fas fa-scroll"></i>
+          Support
+        </li>
+        <li class="sidebar__link">
+          <i class="far fa-life-ring"></i>
+          Report
+        </li>
+        <li class="sidebar__link">
+          <i class="fas fa-comment-alt"></i>
+          Feedback
+        </li>
+      </ul>
+    </aside>
+
+    <div class="dashboard">
+      <h3 class="dashboard__title">Dashboard</h3>
+
+      <div class="dashboard__stats">
+        <!-- Charts Section -->
+        <section class="dashboard__charts-container">
+          <div class="dashboard__chart-item">
+            <div class="dashboard__chart-item-data">
+              <h2>570</h2>
+              <span>All Sales</span>
+            </div>
+            <img class="dashboard__chart-item-image" src="./images/placeholder.png" alt="chart">
+          </div>
+          <div class="dashboard__chart-item">
+            <div class="dashboard__chart-item-data">
+              <h2>230</h2>
+              <span>All Transactions</span>
+            </div>
+            <img class="dashboard__chart-item-image" src="./images/placeholder.png" alt="chart">
+          </div>
+          <div class="dashboard__chart-item">
+            <div class="dashboard__chart-item-data">
+              <h2>690</h2>
+              <span>All Orders</span>
+            </div>
+            <img class="dashboard__chart-item-image" src="./images/placeholder.png" alt="chart">
+          </div>
+          <div class="dashboard__chart-item">
+            <div class="dashboard__chart-item-data">
+              <h2>470</h2>
+              <span>All Comissions</span>
+            </div>
+            <img class="dashboard__chart-item-image" src="./images/placeholder.png" alt="chart">
+          </div>
+        </section>
+
+         <!-- Finance Summary Section -->
+        <section class="dashboard__finance">
+          <div class="dashboard__finance-header">
+            <h4>Finance Summary</h4>
+          </div>
+          <div class="dashboard__finance-body">
+            <div class="finance">
+              <div class="finance__info">
+                <span>Annual Companies Taxes EMS</span>
+                <strong>$500.000</strong>
+              </div>
+              <div class="finance__info">
+                <span>Next Tax Review Date</span>
+                <strong>July 24,2017</strong>
+              </div>
+              <div class="finance__info">
+                <span>Avarage Product Price</span>
+                <strong>$60.70</strong>
+              </div>
+              <div class="finance__info">
+                <span>Satisfication Rate</span>
+                <strong>63%</strong>
+              </div>
+            </div>
+            <img class="dashboard__finance-image" src="./images/placeholder.png" alt="chart">
+          </div>
+        </section>
+
+        <!-- Top Products Section -->
+        <section class="dashboard__products">
+          <div class="dashboard__products-header">
+            <h4>Top Products</h4>
+          </div>
+          <div class="dashboard__products-body">
+
+            <div class="products">
+              <div class="products__info">
+                <i class="fab fa-python"></i>
+                <div class="products__item">
+                  <strong>Python</strong>
+                  <span>A programming language</span>
+                </div>
+                <span class="price">+$17</span>
+              </div>
+
+              <div class="products__info">
+                <i class="fab fa-python"></i>
+                <div class="products__item">
+                  <strong>FlyThemes</strong>
+                  <span>A Let's Fly Fast Again Language</span>
+                </div>
+                <span class="price">+$300</span>
+              </div>
+
+              <div class="products__info">
+                <i class="fab fa-python"></i>
+                <div class="products__item">
+                  <strong>Starbucks</strong>
+                  <span>Good Coffee & Snacks</span>
+                </div>
+                <span class="price">+$300</span>
+              </div>
+            </div>
+
+            <img class="dashboard__products-image" src="./images/placeholder.png" alt="chart">
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

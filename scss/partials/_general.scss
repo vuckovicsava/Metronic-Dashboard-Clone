@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: table;
+  height: 100%;
+  padding-top: 89px;
+}
+
+@media only screen and (max-width: $md) {
+  .main {
+    display: block;
+    padding-top: 60px;
+  }
+}

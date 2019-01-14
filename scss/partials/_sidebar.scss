@@ -1,0 +1,56 @@
+.sidebar {
+  background-color: $dark;
+  color: $purple;
+  display: table-cell;
+  height: 100%;
+  text-align: center;
+  width: 200px;
+
+  &__nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 0 0;
+  }
+
+  &__link {
+    font-size: 14px;
+    padding: 20px 8px;
+
+    .fas,
+    .far {
+      display: block;
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    &:hover {
+      background-color: $darker;
+    }
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .sidebar {
+    left: -300px;
+    position: absolute;
+    transition: .3s linear;
+    width: 300px;
+
+    &.open {
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .sidebar {
+    left: -100vw;
+    position: absolute;
+    transition: .3s linear;
+    width: 100vw;
+
+    &.open {
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+files:
+  include: 'scss/**/*.s+(a|c)ss'
+options:
+  formatter: stylish
+rules:
+  nesting-depth:
+    - 1
+    - max-depth: 3
+  class-name-format:
+    - 1
+    - 
+      allow-leading-underscore: false
+      convention: strictbem

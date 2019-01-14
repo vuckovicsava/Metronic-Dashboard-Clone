@@ -1,0 +1,210 @@
+.dashboard {
+  display: table-cell;
+  flex: 1;
+  padding: 28px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__stats {
+    display: flex;
+    height: 650px;
+
+    section {
+      flex: 1;
+      margin-right: 28px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__charts-container {
+    display: grid;
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  &__chart-item {
+    box-shadow: 0 0 8px $light-grey;
+    min-height: 0;
+
+    &-data {
+      height: 40%;
+      padding: 16px;
+
+      h2 {
+        color: $dark-grey;
+        margin: 0 0 6px;
+      }
+
+      span {
+        color: $grey;
+        font-size: 13px;
+      }
+    }
+
+    &-image {
+      height: 60%;
+      width: 100%;
+    }
+  }
+
+  &__finance {
+    box-shadow: 0 0 8px $light-grey;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      border-bottom: 1px solid $very-light-grey;
+      padding: 24px;
+
+      h4 {
+        margin: 0;
+      }
+    }
+
+    &-body {
+      flex: 1;
+      min-height: 0;
+
+      .finance {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 50%;
+
+        .finance__info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 12px;
+
+          span {
+            color: $grey;
+            font-size: 14px;
+            margin-bottom: 6px;
+          }
+
+          strong {
+            color: $dark-grey;
+            display: block;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &-image {
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  &__products {
+    box-shadow: 0 0 8px $light-grey;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      border-bottom: 1px solid $very-light-grey;
+      padding: 24px;
+
+      h4 {
+        margin: 0;
+      }
+    }
+
+    &-body {
+      flex: 1;
+      min-height: 0;
+    }
+
+    &-image {
+      height: 50%;
+      width: 100%;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      padding: 32px 12px 12px;
+
+      &__info {
+        align-items: center;
+        border-bottom: 1px solid $light-grey;
+        color: $dark-grey;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        padding: 12px;
+
+        .fab {
+          font-size: 36px;
+          margin-right: 12px;
+        }
+
+        .price {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+
+      &__item {
+        margin-right: auto;
+
+        strong {
+          display: block;
+        }
+
+        span {
+          color: $grey;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $lg) {
+  .dashboard {
+    padding: 20px;
+
+    &__stats {
+      display: block;
+      height: auto;
+
+      section {
+        margin: 0 0 28px;
+      }
+    }
+
+    &__chart-item {
+      height: 250px;
+    }
+
+    &__finance,
+    &__products {
+      height: 600px;
+    }
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .dashboard {
+    display: block;
+    width: 100%;
+
+    &__charts-container {
+      display: block;
+    }
+
+    &__chart-item {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
